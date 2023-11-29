@@ -53,7 +53,9 @@ export const PlayersList: React.FC<Props> = ({
     <Droppable droppableId={title}>
       {(provided, snapshot) => (
         <div
-          className={`list__container${snapshot.isDraggingOver ? " drag" : ""}`}
+          className={`list__container${
+            snapshot.isDraggingOver ? " draginto" : ""
+          }`}
           style={
             isFavoriteList
               ? { backgroundColor: color }
@@ -74,10 +76,10 @@ export const PlayersList: React.FC<Props> = ({
             ) : (
               <div>
                 <button
-                  className="list__button grey"
+                  className="list__button blue"
                   onClick={() => handleFetchAll()}
                 >
-                  {"all"}
+                  {"GO!"}
                 </button>
                 {" | "}
                 <button
@@ -87,7 +89,7 @@ export const PlayersList: React.FC<Props> = ({
                   {"<"}
                 </button>{" "}
                 <button
-                  className="list__button white"
+                  className="list__button"
                   onClick={() => handleNextPage()}
                 >
                   {">"}

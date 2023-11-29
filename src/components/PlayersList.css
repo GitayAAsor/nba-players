@@ -15,15 +15,15 @@
 }
 
 .list__button {
-  width: 30px;
-  height: 30px;
+  width: 23px;
+  height: 23px;
   border-radius: 50px;
   border: none;
-  font-size: 17px;
   font-weight: bold;
+  font-size: 10px;
   background-color: white;
   transition: 0.2s all;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 10px black;
 }
 
 .list__button:hover {
@@ -33,11 +33,15 @@
 
 .list__button:active {
   transform: scale(0.95);
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 5px black;
 }
 
-.grey {
-  background-color: darkgrey;
+.blue {
+  background-color: #2f74c0;
+  color: white;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 10px black;
 }
 
 .list__element {
@@ -54,10 +58,16 @@
   transform: scale(1.02);
 }
 
-.drag {
+.draginto {
   box-shadow: 0 0 15px white;
 }
 
 .dragged {
   box-shadow: 0 0 20px black;
+}
+
+@media (max-width: 900px) {
+  .list__haeding {
+    font-size: 15px;
+  }
 }
