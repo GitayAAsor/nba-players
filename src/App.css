@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+.app {
+  width: 100vw;
+  height: 200vw;
+  background-color: #2f74c0;
+  font-family: "Neucha", cursive;
+}
+
+.app__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.lists__container {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  width: 47.5%;
+  flex-direction: column;
+}
+
+.bin {
+  text-align: center;
+  background-color: #eb6750;
+  margin: 10px;
+  margin-bottom: 34px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 30px;
+  box-shadow: inset 0 0 5px black;
+}
+
+.drag {
+  box-shadow: 0 0 15px white;
+}
+
+@media (max-width: 900px) {
+  .app__heading {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .list {
+    padding: 10px;
+  }
+  .lists__container {
+    margin: 5px;
+  }
+
+  .bin {
+    font-size: 20px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 630px) {
+  .app {
+    height: 450vw;
+  }
+
+  .lists__container {
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .bin {
+    margin-bottom: 0px;
+  }
+}
