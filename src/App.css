@@ -34,7 +34,7 @@
   text-align: center;
   background-color: #eb6750;
   margin: 10px;
-  margin-bottom: 34px;
+  margin-bottom: 45px;
   padding: 5px;
   border-radius: 10px;
   font-size: 30px;
@@ -60,11 +60,11 @@
 
   .bin {
     font-size: 20px;
-    margin-bottom: 48px;
+    margin-bottom: 59px;
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 750px) {
   .app {
     height: 450vw;
   }
@@ -73,6 +73,12 @@
     flex-direction: column;
     align-items: center;
     margin: 5px;
+  }
+
+  .list {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
   }
 
   .bin {
